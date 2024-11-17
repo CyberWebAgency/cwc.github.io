@@ -1,0 +1,16 @@
+# Enable expirations
+ExpiresActive On
+
+# Set default expiration time to 1 month
+ExpiresDefault "access plus 1 month"
+
+# Set specific expiration for images
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/webp "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
+
+# Optional: Set expiration for other assets like CSS, JS
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
